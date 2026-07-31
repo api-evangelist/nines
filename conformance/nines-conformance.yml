@@ -1,0 +1,77 @@
+aid: nines-conformance
+name: Nines / Sirona Medical Standards Conformance
+description: >-
+  Cross-cutting and industry standards conformance for Nines, whose AI radiology
+  technology (NinesAI Emergent Triage, NinesMeasure) and team were acquired by
+  Sirona Medical in February 2022 and folded into the RadOS platform. Claims are
+  taken from Sirona Medical's public security/compliance and interoperability
+  pages; there is no public developer API, so API-protocol standards are not
+  applicable.
+generated: '2026-07-20'
+method: searched
+source:
+- https://sironamedical.com/solutions/security-regulatory-compliance
+- https://sironamedical.com/platform/capability/interoperability
+- https://sironamedical.com/llms.txt
+conformance:
+- id: soc2-type-ii
+  name: SOC 2 Type II
+  conforms: true
+  evidence: >-
+    "Six consecutive years of SOC 2 Type II certification with zero exceptions",
+    independently audited annually across security, availability, processing
+    integrity, confidentiality, and privacy.
+  source: https://sironamedical.com/solutions/security-regulatory-compliance
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  evidence: >-
+    "HIPAA-compliant by design" with end-to-end encryption, audit logging,
+    access controls, and patient authentication.
+  source: https://sironamedical.com/solutions/security-regulatory-compliance
+- id: fda-class-i
+  name: FDA Class I (medical device platform)
+  conforms: true
+  evidence: >-
+    "The only FDA Class I reporter platform in radiology"; developed under a
+    regulated, design-controlled SDLC. Nines contributed two FDA-cleared devices
+    (NinesAI Emergent Triage, NinesMeasure lung-nodule algorithm).
+  source: https://sironamedical.com/solutions/security-regulatory-compliance
+- id: dicom
+  name: DICOM
+  conforms: true
+  evidence: >-
+    "Fully managed DICOM, HL7, and FHIR integration" with existing PACS, RIS,
+    EMR, and worklist systems.
+  source: https://sironamedical.com/platform/capability/interoperability
+- id: hl7
+  name: HL7
+  conforms: true
+  evidence: Managed HL7 integration listed among core interoperability capabilities.
+  source: https://sironamedical.com/platform/capability/interoperability
+- id: fhir
+  name: HL7 FHIR
+  conforms: true
+  evidence: Managed FHIR integration listed among core interoperability capabilities.
+  source: https://sironamedical.com/platform/capability/interoperability
+- id: iso-13485
+  name: ISO 13485 (medical devices QMS)
+  conforms: false
+  evidence: >-
+    Stated as "pursuing" ISO 13485; not yet obtained. Targeted for international
+    expansion in 2027.
+  source: https://sironamedical.com/solutions/security-regulatory-compliance
+- id: eu-mdr
+  name: EU MDR
+  conforms: false
+  evidence: >-
+    Stated as "pursuing EU MDR certification"; not yet obtained. Targeted for
+    2027 international expansion.
+  source: https://sironamedical.com/solutions/security-regulatory-compliance
+- id: gdpr
+  name: EU GDPR
+  conforms: false
+  evidence: >-
+    GDPR / UK Data Protection Act compliance posture referenced only as part of
+    planned international expansion; no current certification claim.
+  source: https://sironamedical.com/solutions/security-regulatory-compliance

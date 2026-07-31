@@ -1,20 +1,53 @@
 aid: nines
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nines.png
 name: Nines
-description: 'Nines is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Nines was a teleradiology and medical-imaging AI startup founded in 2017 and
+  backed by Accel and 8VC (a $16.5M Series A in 2019), co-founded by CEO David
+  Stavens. It built FDA-cleared AI algorithms — NinesAI Emergent Triage (for
+  intracranial hemorrhage and mass effect) and NinesMeasure (a lung-nodule
+  algorithm) — alongside a live teleradiology practice. On 2022-02-18, Sirona
+  Medical acquired Nines' AI technology, clinical data pipeline, machine-learning
+  engines, and key personnel, folding the FDA-cleared devices into RadOS, Sirona's
+  cloud-native Radiology Operating System (reporter, viewer, PACS, worklist, and
+  platform AI). The nines.com domain now redirects to sironamedical.com. There is
+  no public developer API today; a RadOS "Amplify" SDK (TypeScript/Python, REST +
+  streaming APIs, event subscriptions) is on Sirona's roadmap as an early-access
+  program for design partners.
 url: https://raw.githubusercontent.com/api-evangelist/nines/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - accel
+- 8vc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-successor: sirona-medical
+x-acquired-by: Sirona Medical
+x-acquired-date: '2022-02-18'
+x-former-domain: nines.com
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Ai
+- AI
+- Radiology
+- Medical Imaging
+- Healthcare
+- Teleradiology
+- DICOM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +56,27 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.nines.com
+  url: https://sironamedical.com
+- type: About
+  url: https://sironamedical.com/company
+- type: Blog
+  url: https://sironamedical.com/resources/blog
+- type: Press
+  url: https://sironamedical.com/company/press
+- type: Pricing
+  url: https://sironamedical.com/pro
+- type: SignUp
+  url: https://sironamedical.com/see-sirona
+- type: LLMsTxt
+  url: llms/nines-llms.txt
+- type: Conformance
+  url: conformance/nines-conformance.yml
+- type: Compliance
+  url: conformance/nines-conformance.yml
+- type: TrustCenter
+  url: security/nines-trust-center.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
